@@ -1,0 +1,23 @@
+[
+  {
+    "name": "testapp",
+    "image": "${app_image}",
+    "cpu": 10,
+    "memory": 256,
+    "networkMode": "awsvpc",
+    "logConfiguration": {
+        "logDriver": "awslogs",
+        "options": {
+          "awslogs-group": "/ecs/testapp",
+          "awslogs-region": "ap-northeast-1",
+          "awslogs-stream-prefix": "ecs"
+        }
+    },
+    "portMappings": [
+      {
+        "containerPort": 80
+      
+      }
+    ]
+  }
+]
