@@ -16,7 +16,7 @@ variable "ecs_task_execution_role" {
 }
 
 variable "app_image" {
-  default     = "***************************************"
+  default     = "872393502527.dkr.ecr.ap-northeast-1.amazonaws.com/workshop:latest"
   description = "docker image to run in this ECS cluster"
 }
 
